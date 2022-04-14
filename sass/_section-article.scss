@@ -1,19 +1,26 @@
 .article {
-    padding: 2rem 2rem;
+    padding: 0 2rem 2rem 2rem;
     background-color: $color-bg-primary;
+
+    h2 {
+        margin: 2rem 0 1rem .5rem;
+    }
 
     .project-div-card,
     .announcements > div, 
-    .trending {
+    .trending > div {
         background-color: white;
         border-radius: 5px;
         box-shadow: $box-shadow;
-        margin-top: 1rem;
         padding: 2rem 1rem;
     }
 
     .project-div-card {
         border-left: 5px solid rgb(255, 179, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
         div ul {
             display: flex;
             flex-direction: row;
@@ -23,18 +30,18 @@
         }
     }
 
-    .announcements div div,
-    .trending div {
+    .announcements div div {
         margin: 1rem 0;
     }
 
-    .trending div {
-        margin: 2rem 0;
-
+    .trending {        
         div {
-            display: flex;
-            flex-direction: row;
-            gap: 1rem;
+            div {
+                display: flex;
+                flex-direction: row;
+                margin: 2rem 0;
+                gap: 1rem;
+            }
         }
     }
 }
