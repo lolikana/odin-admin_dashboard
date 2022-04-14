@@ -1,0 +1,38 @@
+.grid-layout {
+    height: 100%;
+    display: grid;
+    grid-template: 1fr 1fr / 250px 2fr;
+
+    .header {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .sidebar {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .article {
+        grid: 2 / 2 / 3 / 3;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        gap: 2rem 2rem;
+
+        .project {
+            grid-area: 1 / 1 / 3 / 3;
+            
+            &-div {
+                display: grid;
+                grid-template: repeat(2, minmax(200px, 1fr)) / repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+        }
+
+        .announcements {
+            grid-area: 1 / 3 / 2 / 4;
+        }
+
+        .trending {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+    }
+}

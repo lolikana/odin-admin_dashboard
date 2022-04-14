@@ -1,0 +1,40 @@
+.article {
+    padding: 2rem 2rem;
+    background-color: $color-bg-primary;
+
+    .project-div-card,
+    .announcements > div, 
+    .trending {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        margin-top: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .project-div-card {
+        border-left: 5px solid rgb(255, 179, 0);
+        div ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin-top: 1rem;
+            gap: 1rem;
+        }
+    }
+
+    .announcements div div,
+    .trending div {
+        margin: 1rem 0;
+    }
+
+    .trending div {
+        margin: 2rem 0;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+}

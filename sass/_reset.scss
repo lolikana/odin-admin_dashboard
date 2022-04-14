@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+textarea {
+    overflow: auto;
+}
+
+::placeholder {
+    color: unset;
+}
+
+ul {
+    list-style: none;
+}

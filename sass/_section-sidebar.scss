@@ -1,0 +1,29 @@
+.sidebar {
+    
+    color: $color-font-white;
+    background-color: $color-bg-blue;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+
+        >  div a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: .5rem 0;
+
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .menu-small {
+        margin-left: 1rem;
+    }
+}
